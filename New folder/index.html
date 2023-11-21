@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TRUE BEAUTY</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			font-family: "Brush Script MT",  "Papyrus", cursive;
+			background-image: linear-gradient(#863A6F,#FFADBC,#FFADBC,#863A6F);
+		}
+		ul a.active{
+					background-color: #975C8D;
+					color: #863A6F;
+					}
+		.home{
+			text-shadow: 2px 3px #FFADBC;
+			color: #863A6F;
+			}
+		
+		.Pone{
+			float: left;
+			text-align: left;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #863A6F;
+			}
+			
+		ul {
+			background-image: linear-gradient(#863A6F,#FFADBC,#FFADBC,#863A6F);
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #863A6F;
+		}
+
+		li {
+			float: right;
+		}
+
+		li a {
+			display: block;
+			color:  #863A6F;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			
+		}
+
+		li a:hover {
+			background-color: #863A6F;
+			color: #FFADBC;
+			text-transform: uppercase;
+		}
+		
+		/* Slider styling */
+		.slider {
+			width: 100%;
+			height: 10%;
+			margin: 20px auto;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.slide {
+			display: none;
+			position: center;
+			top: 0%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		
+		.slide img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}	
+		
+		/* frame video */
+		.frame{
+				padding: 0%;
+				}
+				
+		iframe{
+				width: 100%;
+				height: 500px;
+				}
+	</style>
+</head>
+<body>
+<ul>
+		<li><a href="About Me.html">About Me</a></li>
+		<li><a href="Cast.html">Cast</a></li>
+		<li><a href="Plot.html">Plot</a></li>
+		<li><a href="Home.html" class="active">Home</a></li>
+	</ul>
+	
+	<!-- Slider -->
+	<div class="slider">
+		<div class="slide">
+			<img src="True Beauty.jpg">
+		</div>
+		<div class="slide">
+			<img src="True beauty 2.jpg">
+		</div>
+		<div class="slide">
+			<img src="True.jpg">
+		</div>
+		<div class="slide">
+			<img src="beauty.jpg">
+		</div>
+	</div>
+	
+	<br>
+	
+	<div class="home">
+	<h1 style="text-align:center;"> TRUE BEAUTY </h1>
+	</div>
+	<br>
+	<div class="Pone">
+	<p style="text-align: justify; margin-right:10px;"><strong>True Beauty</strong>
+			(Korean: 여신강림) is a South Korean television series starring Moon Ga-young, Cha Eun-woo, Hwang In-youp, and Park Yoo-na. Based on the Line Webtoon of the same name by Yaongyi, it centers on a high school girl who, after being bullied and discriminated against because of being perceived as ugly, masters the art of makeup to transform herself into a gorgeous "goddess". It aired on tvN from December 9, 2020 to February 4, 2021, every Wednesday and Thursday at 22:30 (KST).</p>
+	</div>
+	<div class="frame">
+	<iframe src="https://www.youtube.com/embed/Rq3Afp1XGm0?playlist=Rq3Afp1XGm0">
+	</iframe>
+	</div>
+	<br>
+	
+	<script>
+		// Slider functionality
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("slide");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			slides[slideIndex-1].style.display = "block";  
+			setTimeout(showSlides, 5000); // Change image every 3 seconds
+		}
+		
+		// Responsive navbar functionality
+	
+	</script>
+</body>
+</html>
+
+		
